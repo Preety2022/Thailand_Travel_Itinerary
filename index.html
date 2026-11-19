@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#073b3a">
+  <meta name="description" content="Build your Thailand trip your way. Custom solo and group itineraries starting at ₹30,000, with special group-travel discounts.">
+  <title>Thailand Travel Itinerary | Your Thailand, Your Way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#123b39;--deep:#073b3a;--teal:#0c7770;--mint:#dff4ed;--coral:#ff765f;--gold:#f5c66a;--cream:#fffaf2;--muted:#617774;--white:#fff;--shadow:0 18px 50px rgba(7,59,58,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{background:var(--deep);color:#eafff7;padding:12px 0;font-size:13px}.topbar .inner{display:flex;justify-content:space-between;align-items:center;gap:12px}.topbar strong{color:var(--gold)}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,250,242,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(18,59,57,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.5px}.brand-mark{width:42px;height:42px;border-radius:14px;background:var(--teal);display:grid;place-items:center;color:white;font-size:22px;box-shadow:0 8px 18px #0c777044}.brand span small{display:block;font-size:10px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;margin-top:2px}.navlinks{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--coral)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:14px 21px;background:var(--coral);color:white;font-weight:800;cursor:pointer;box-shadow:0 9px 20px #ff765f38;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:saturate(1.1)}.menu-btn{display:none;background:none;border:0;color:var(--deep);font-size:27px}
+    .ticker{overflow:hidden;background:var(--gold);color:#3c3422;padding:10px 0;font-size:13px;font-weight:800;white-space:nowrap}.ticker-track{display:inline-flex;gap:50px;min-width:max-content;animation:slide 32s linear infinite}.ticker-track span:before{content:"✦";margin-right:12px;color:#b65b42}@keyframes slide{from{transform:translateX(-55%)}to{transform:translateX(100vw)}}.ticker:hover .ticker-track{animation-play-state:paused}
+    .hero{position:relative;min-height:650px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(4,36,37,.82),rgba(4,36,37,.42) 54%,rgba(4,36,37,.08)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=85') center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:140px;background:linear-gradient(transparent,var(--cream))}.hero-content{position:relative;z-index:1;max-width:700px;padding:90px 0 125px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}.hero h1{font:800 clamp(48px,7vw,82px)/.99 "Playfair Display",serif;letter-spacing:-2px;margin:20px 0}.hero h1 em{color:var(--gold);font-style:normal}.hero p{font-size:18px;line-height:1.7;max-width:590px;color:#e5f2ec}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border:1px solid #ffffff9c;border-radius:999px;color:white;font-weight:800;transition:.2s}.btn-outline:hover{background:#ffffff20}.hero-note{margin-top:24px;font-size:13px;color:#e5f2ec}.hero-note b{color:var(--gold)}
+    .quickfacts{position:relative;z-index:2;margin-top:-55px}.facts{display:grid;grid-template-columns:repeat(3,1fr);background:white;border-radius:22px;padding:25px;box-shadow:var(--shadow)}.fact{padding:8px 25px;border-right:1px solid #e7eeea}.fact:last-child{border:0}.fact strong{display:block;font:700 29px "Playfair Display",serif;color:var(--teal)}.fact span{font-size:13px;color:var(--muted)}
+    section{padding:100px 0}.section-head{max-width:680px;margin-bottom:42px}.kicker{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--coral)}h2{font:700 clamp(34px,4vw,52px)/1.1 "Playfair Display",serif;letter-spacing:-1px;margin:12px 0 16px}.section-head p,.lead{color:var(--muted);line-height:1.75;font-size:16px}
+    .places-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.place{position:relative;min-height:270px;border-radius:19px;overflow:hidden;color:white;box-shadow:var(--shadow);isolation:isolate}.place:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,30,31,.8),transparent 70%);z-index:-1}.place img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s}.place:hover img{transform:scale(1.07)}.place-copy{position:absolute;bottom:0;padding:20px}.place-copy small{color:#ffe2a0;text-transform:uppercase;font-weight:800;letter-spacing:1.5px;font-size:10px}.place-copy h3{font:700 23px "Playfair Display",serif;margin:6px 0}.place-copy p{font-size:12px;margin:0;color:#e9f2ed;line-height:1.5}
+    .packages{background:#eaf5ef}.package-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.package{background:white;border-radius:24px;padding:30px;box-shadow:0 10px 30px #123b390b;position:relative;overflow:hidden}.package.featured{background:var(--deep);color:white}.package .tag{display:inline-block;border-radius:30px;background:var(--mint);color:var(--teal);padding:7px 11px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px}.featured .tag{background:#ffffff1a;color:var(--gold)}.package h3{font:700 30px "Playfair Display",serif;margin:18px 0 7px}.price{font-size:35px;font-weight:800;letter-spacing:-1px;margin:10px 0}.price small{font-size:13px;font-weight:500;letter-spacing:0;opacity:.7}.package p{color:var(--muted);line-height:1.7}.featured p{color:#c9ddda}.package ul{padding:0;list-style:none;margin:22px 0}.package li{padding:9px 0;border-bottom:1px solid #e8efeb;font-size:14px}.featured li{border-color:#ffffff22}.package li:before{content:"✓";color:var(--teal);font-weight:900;margin-right:10px}.featured li:before{color:var(--gold)}.package .btn{margin-top:5px}.featured .btn{background:var(--gold);color:var(--deep)}
+    .group-banner{margin-top:22px;background:var(--coral);border-radius:22px;padding:27px 32px;color:white;display:flex;align-items:center;justify-content:space-between;gap:20px}.group-banner h3{font:700 27px "Playfair Display",serif;margin:0 0 6px}.group-banner p{margin:0;color:#fff1eb;font-size:14px}
+    .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step{padding:25px;border:1px solid #e3ece6;border-radius:20px;background:white}.step-num{width:43px;height:43px;border-radius:14px;background:var(--mint);display:grid;place-items:center;color:var(--teal);font-weight:900}.step h3{font:700 22px "Playfair Display",serif;margin:18px 0 8px}.step p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+    .about{background:var(--deep);color:white;position:relative;overflow:hidden}.about:after{content:"THAILAND";position:absolute;right:-35px;bottom:-65px;font:800 150px "Playfair Display",serif;color:#ffffff08}.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}.about .lead{color:#c8dcda}.about-card{background:#ffffff10;border:1px solid #ffffff24;border-radius:22px;padding:28px}.about-card strong{color:var(--gold)}.about-card p{line-height:1.8;color:#d4e5e1;font-size:14px}.about-card .disclaimer{font-size:12px;color:#a8c4bf;border-top:1px solid #ffffff24;padding-top:15px;margin-top:20px}
+    .contact{background:#fff7eb}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}.contact-card{background:white;border-radius:24px;padding:30px;box-shadow:var(--shadow)}.contact-row{display:flex;align-items:center;gap:15px;padding:16px 0;border-bottom:1px solid #edf1ed}.contact-row:last-child{border:0}.social-icon{width:45px;height:45px;flex:none;border-radius:15px;background:var(--mint);display:grid;place-items:center;color:var(--teal)}.social-icon svg{width:22px;height:22px;fill:currentColor}.contact-row small{display:block;color:var(--muted);margin-bottom:3px}.contact-row strong{font-size:14px}.contact-row .arrow{margin-left:auto;color:var(--coral);font-size:20px}.contact-cta{background:var(--deep);border-radius:24px;padding:30px;color:white}.contact-cta h3{font:700 30px "Playfair Display",serif;margin:0 0 12px}.contact-cta p{color:#c8dcda;line-height:1.7;font-size:14px}.contact-cta .btn{margin-top:10px}
+    footer{background:#052d2d;color:#a8c4bf;padding:25px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-inner strong{color:white}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:900px){.places-grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:16px}.about-inner{gap:30px}}
+    @media(max-width:680px){.container{width:min(100% - 30px,560px)}.topbar .inner{justify-content:center;text-align:center}.topbar .inner span:last-child{display:none}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:var(--cream);padding:20px 25px 25px;flex-direction:column;align-items:stretch;border-bottom:1px solid #e6ece7;box-shadow:var(--shadow)}.navlinks.open{display:flex}.nav-cta{text-align:center}.hero{min-height:620px;background-position:58% center}.hero-content{padding:70px 0 110px}.hero h1{font-size:53px}.hero p{font-size:16px}.facts{grid-template-columns:1fr;padding:12px 22px}.fact{border-right:0;border-bottom:1px solid #e7eeea;padding:13px 5px}.fact:last-child{border:0}.fact strong{font-size:24px}.quickfacts{margin-top:-45px}section{padding:75px 0}.places-grid{gap:12px}.place{min-height:230px}.place-copy{padding:14px}.place-copy h3{font-size:19px}.package-grid,.how-grid,.about-inner,.contact-grid{grid-template-columns:1fr}.package{padding:24px}.group-banner{align-items:flex-start;flex-direction:column;padding:24px}.footer-inner{flex-direction:column;text-align:center}.about:after{font-size:90px}.ticker-track{animation-duration:24s}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+
+/* ===== RESPONSIVE IMPROVEMENTS ===== */
+
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container {
+    width: 92%;
+  }
+
+  .places-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 7vw, 68px);
+  }
+
+  .about-inner,
+  .contact-grid {
+    gap: 25px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .hero {
+    min-height: 570px;
+    background-position: center;
+  }
+
+  .hero-content {
+    padding: 65px 0 100px;
+  }
+
+  .hero h1 {
+    font-size: clamp(39px, 11vw, 52px);
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions a {
+    width: 100%;
+  }
+
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .places-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .place {
+    min-height: 205px;
+  }
+
+  .place-copy {
+    padding: 12px;
+  }
+
+  .place-copy h3 {
+    font-size: 17px;
+  }
+
+  .place-copy p {
+    font-size: 11px;
+  }
+
+  .package-grid,
+  .how-grid,
+  .about-inner,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package {
+    padding: 22px;
+  }
+
+  .price {
+    font-size: 29px;
+  }
+
+  .group-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .group-banner .btn {
+    width: 100%;
+  }
+
+  .contact-card,
+  .contact-cta {
+    padding: 20px;
+  }
+
+  .contact-row {
+    gap: 10px;
+  }
+
+  .contact-row strong {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .place {
+    min-height: 240px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .brand {
+    font-size: 13px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container inner"><span>🌴 Your Thailand trip, planned with care — not commissions.</span><span><strong>Packages from ₹30,000</strong> · Solo & group journeys</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Thailand Travel Itinerary home"><span class="brand-mark">✈</span><span>Thailand Travel Itinerary<small>your trip, your way</small></span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="navlinks" id="navLinks">
+        <a href="#destinations">Explore</a><a href="#packages">Packages</a><a href="#how">How it works</a><a href="#about">About</a><a class="nav-cta" href="#contact">Plan my trip ↗</a>
+      </nav>
+    </div>
+  </header>
+  <div class="ticker" aria-label="Independent itinerary planning notice"><div class="ticker-track"><span>NOT A TRAVEL AGENCY — I’M AN INDIVIDUAL TRAVELLER SHARING PERSONALISED ITINERARIES, SO YOU CAN PLAN YOUR THAILAND TRIP WITHOUT EXTRA HEFTY COMMISSIONS.</span><span>NOT A TRAVEL AGENCY — I’M AN INDIVIDUAL TRAVELLER SHARING PERSONALISED ITINERARIES, SO YOU CAN PLAN YOUR THAILAND TRIP WITHOUT EXTRA HEFTY COMMISSIONS.</span></div></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container"><div class="hero-content">
+        <div class="eyebrow">☀ Thailand is calling</div>
+        <h1>Less planning stress.<br><em>More island</em> stories.</h1>
+        <p>From Phuket’s turquoise waters to Bangkok after-dark views — let’s shape a Thailand itinerary around your pace, budget and bucket list.</p>
+        <div class="hero-actions"><a class="btn" href="#packages">Explore packages <span>↗</span></a><a class="btn-outline" href="#destinations">Get inspired ↓</a></div>
+        <div class="hero-note">Made for <b>solo explorers</b>, friends, couples & groups.</div>
+      </div></div>
+    </section>
+
+    <div class="container quickfacts"><div class="facts">
+      <div class="fact"><strong>₹30,000+</strong><span>Indicative package starting point</span></div>
+      <div class="fact"><strong>100% custom</strong><span>Built around your travel style</span></div>
+      <div class="fact"><strong>Group perks</strong><span>Special discounts for group travel</span></div>
+    </div></div>
+
+    <section id="destinations"><div class="container">
+      <div class="section-head reveal"><div class="kicker">The Thailand wishlist</div><h2>One country. A thousand “wow” moments.</h2><p>Mix laid-back island days, underwater adventures, culture and city lights. Pick your favourites and we’ll map out a trip that makes sense for you.</p></div>
+      <div class="places-grid">
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phuket_Aerial.jpg?width=1200" alt="Tropical beach in Phuket, Thailand" loading="lazy"><div class="place-copy"><small>Island life</small><h3>Phuket</h3><p>Beaches, viewpoints, nightlife & sunsets.</p></div></article>
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Big_Buddha_-_Phuket.jpg?width=1200" alt="Golden Thai Buddhist temple" loading="lazy"><div class="place-copy"><small>Culture stop</small><h3>Big Buddha & temples</h3><p>Take in the views and local heritage.</p></div></article>
+        <article class="place reveal"><img src="https://static.wixstatic.com/media/ef549a_b87e912f0d944074bd0593568e76047c~mv2.jpg/v1/fill/w_1404,h_1014,al_c,q_85/ef549a_b87e912f0d944074bd0593568e76047c~mv2.jpg" alt="Scuba diving in clear tropical water" loading="lazy"><div class="place-copy"><small>Underwater world</small><h3>Racha Island</h3><p>Scuba, snorkelling, ATV and sea days.</p></div></article>
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phi_Phi_Island_Thailand.jpg?width=1200" alt="Turquoise tropical sea and island coast" loading="lazy"><div class="place-copy"><small>Island hopping</small><h3>Phi Phi Islands</h3><p>Cliffs, blue lagoons and boat tours.</p></div></article>
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maya_Bay_Thailand.jpg?width=1200" alt="Beautiful tropical bay surrounded by cliffs" loading="lazy"><div class="place-copy"><small>Bucket-list view</small><h3>Maya Bay</h3><p>That postcard-perfect limestone bay.</p></div></article>
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chao-phraya-river-cruise.jpg?width=1200" alt="Illuminated city skyline at night" loading="lazy"><div class="place-copy"><small>City nights</small><h3>Bangkok river cruise</h3><p>Riverside landmarks after sunset.</p></div></article>
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sanctuary_of_Truth_Pattaya.jpg?width=1200" alt="Intricate architectural wooden structure" loading="lazy"><div class="place-copy"><small>Architectural wonder</small><h3>Sanctuary of Truth</h3><p>Pattaya’s remarkable wood-carved landmark.</p></div></article>
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_from_top_of_King_Power_Maha_Nakhon_Tower.jpg?width=1400" alt="Panoramic city skyline at dusk" loading="lazy"><div class="place-copy"><small>Sky-high views</small><h3>Mahanakhon SkyWalk</h3><p>Bangkok from a whole new perspective.</p></div></article>
+        <article class="place reveal"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wat_Arun_Bangkok.jpg?width=1200" alt="Wat Arun Temple of Dawn in Bangkok" loading="lazy"><div class="place-copy"><small>Temple trail</small><h3>Wat Arun & Bangkok temples</h3><p>Golden details, riverside views and Thai heritage.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="packages" id="packages"><div class="container">
+      <div class="section-head reveal"><div class="kicker">Your trip, your budget</div><h2>Choose a starting point. We’ll customise the rest.</h2><p>These are indicative planning starting points, not fixed or all-inclusive tour prices. Your final budget depends on dates, flights, stays, activities and group size.</p></div>
+      <div class="package-grid">
+        <article class="package reveal"><span class="tag">Solo / small group</span><h3>The Thailand Starter</h3><div class="price">₹30,000<small> / person · starting from</small></div><p>A flexible starting point for travellers who want the highlights without a packed schedule.</p><ul><li>Personalised day-wise itinerary</li><li>Phuket or Bangkok focus, or both</li><li>Suggested stays, transfers & experiences</li><li>Budget-friendly activity options</li></ul><a class="btn" href="#contact">Customise this trip ↗</a></article>
+        <article class="package featured reveal"><span class="tag">Made for your crew</span><h3>The Group Getaway</h3><div class="price">Special group offers<small> · ask for a quote</small></div><p>Bring your favourite people. We’ll help balance shared experiences, free time and everyone’s budget.</p><ul><li>Custom group itinerary & pacing</li><li>Special discounts for group travel</li><li>Island tours, city days & add-ons</li><li>Options based on group size and dates</li></ul><a class="btn" href="#contact">Get a group quote ↗</a></article>
+      </div>
+      <div class="group-banner reveal"><div><h3>The bigger the crew, the better the deal. 🧡</h3><p>Travelling with friends, family or colleagues? Ask about special group discounts.</p></div><a class="btn" href="mailto:devanshi666610@gmail.com?subject=Thailand%20group%20travel%20enquiry">Ask for group pricing ↗</a></div>
+    </div></section>
+
+    <section id="how"><div class="container">
+      <div class="section-head reveal"><div class="kicker">Simple, transparent, personal</div><h2>From “let’s go” to a plan you’re excited about.</h2><p>No cookie-cutter itinerary. Just a thoughtful plan shaped around what you want to experience.</p></div>
+      <div class="how-grid">
+        <article class="step reveal"><div class="step-num">01</div><h3>Tell me your vibe</h3><p>Share your dates, approximate budget, group size and the places or experiences on your wishlist.</p></article>
+        <article class="step reveal"><div class="step-num">02</div><h3>Shape your itinerary</h3><p>Get a suggested day-wise route with activity ideas, travel flow and practical planning pointers.</p></article>
+        <article class="step reveal"><div class="step-num">03</div><h3>Book your way</h3><p>Review the plan and make bookings directly with your chosen airlines, hotels and activity providers.</p></article>
+      </div>
+    </div></section>
+
+    <section class="about" id="about"><div class="container about-inner">
+      <div class="reveal"><div class="kicker">A personal travel project</div><h2>Not a travel agency. Just a traveller who loves a good plan.</h2><p class="lead">I’m an individual putting together customised Thailand itineraries to help fellow travellers make the most of their time and money — whether you’re travelling solo or with a group.</p></div>
+      <div class="about-card reveal"><strong>Why plan this way?</strong><p>Skip the one-size-fits-all package. Get ideas tailored to your interests, with the freedom to compare and book services directly. The goal is to help you travel confidently without extra hefty commissions.</p><p class="disclaimer">Transparency note: This is an independent itinerary-planning initiative, not a registered travel agency or tour operator. Flights, accommodation, transport, tickets and activities are booked and paid for directly by you with the respective providers. Prices and availability can change.</p></div>
+    </div></section>
+
+    <section class="contact" id="contact"><div class="container">
+      <div class="section-head reveal"><div class="kicker">Let’s plan your Thailand story</div><h2>Tell me what’s on your bucket list.</h2><p>Have a question or want a customised itinerary? Reach out by email, or follow along for travel inspiration and recent vlogs.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <a class="contact-row" href="mailto:devanshi666610@gmail.com"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5Z"/></svg></span><span><small>Email for itinerary enquiries</small><strong>devanshi666610@gmail.com</strong></span><span class="arrow">↗</span></a>
+          <a class="contact-row" href="https://www.instagram.com/raw_corporate_girl?bqrl=djVmbWViajIzNmRu&utm_source=qr" target="_blank" rel="noopener noreferrer"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></span><span><small>Follow us on Instagram</small><strong>@raw_corporate_girl</strong></span><span class="arrow">↗</span></a>
+          <a class="contact-row" href="https://youtube.com/@raw_corporate_girl?si=ioMTLyBWmaa2Duwp" target="_blank" rel="noopener noreferrer"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7a31 31 0 0 0-.5 5 31 31 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31 31 0 0 0 .5-5 31 31 0 0 0-.5-5ZM9.7 15.4V8.6l6 3.4Z"/></svg></span><span><small>Subscribe for recent travel vlogs</small><strong>Raw Corporate Girl on YouTube</strong></span><span class="arrow">↗</span></a>
+        </div>
+        <div class="contact-cta reveal"><h3>Your Thailand chapter starts here.</h3><p>Send a quick email with your travel month, number of travellers and the experiences you don’t want to miss. I’ll get back to you about the next steps.</p><a class="btn" href="mailto:devanshi666610@gmail.com?subject=Plan%20my%20Thailand%20itinerary&body=Hi!%0A%0AI%27m%20interested%20in%20a%20customised%20Thailand%20itinerary.%0A%0ATravel%20dates%3A%0ANumber%20of%20travellers%3A%0AApproximate%20budget%3A%0APlaces%20on%20my%20wishlist%3A%0A">Email to get started ↗</a></div>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> <strong>Thailand Travel Itinerary</strong> · Made with ☀ and a love for travel.</span><span>Independent itinerary planning · Not a travel agency</span></div></footer>
+  <script>
+    const menuBtn=document.getElementById('menuBtn');
+    const navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰';});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    // Remote image hosts can occasionally rate-limit or block hotlinking.
+    // Keep a graceful fallback so the destination cards never show broken-image icons.
+    document.querySelectorAll('.place img').forEach(img=>{
+      img.addEventListener('error',()=>{
+        img.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80';
+      },{once:true});
+    });
+  </script>
+</body>
+</html>
